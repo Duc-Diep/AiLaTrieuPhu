@@ -31,25 +31,25 @@ public class DialogKhanGiaTraLoi extends Dialog {
         }
 
         int tong = 125;
-        int arrPhanTranTl[] = new int[]{0,0,0,0}; // a  b  c d
+        int arrPhanTramTl[] = new int[]{0,0,0,0}; // a  b  c d
         int soKhanGia = 200;
         Random r = new Random();
         for(int i=0;i<soKhanGia;i++){
             int chon = r.nextInt(tong);// 0 25 75 100 125
             if(chon>=0 && chon<arrdrom[0]){
-                arrPhanTranTl[0]++;
+                arrPhanTramTl[0]++;
             }else if(chon>= arrdrom[0] && chon<arrdrom[1]){
-                arrPhanTranTl[1]++;
+                arrPhanTramTl[1]++;
             }else if(chon>= arrdrom[1] && chon<arrdrom[2]){
-                arrPhanTranTl[2]++;
+                arrPhanTramTl[2]++;
             }else {
-                arrPhanTranTl[3]++;
+                arrPhanTramTl[3]++;
             }
         }
-        txvChonA.setText("A : "+(int)(arrPhanTranTl[0]*100.0f/soKhanGia)+" %");
-        txvChonB.setText("B : "+(int)(arrPhanTranTl[1]*100.0f/soKhanGia)+" %");
-        txvChonC.setText("C : "+(int)(arrPhanTranTl[2]*100.0f/soKhanGia)+" %");
-        txvChonD.setText("D : "+(int)(arrPhanTranTl[3]*100.0f/soKhanGia)+" %");
+        txvChonA.setText("A : "+(int)(arrPhanTramTl[0]*100.0f/soKhanGia)+" %");
+        txvChonB.setText("B : "+(int)(arrPhanTramTl[1]*100.0f/soKhanGia)+" %");
+        txvChonC.setText("C : "+(int)(arrPhanTramTl[2]*100.0f/soKhanGia)+" %");
+        txvChonD.setText("D : "+(int)(arrPhanTramTl[3]*100.0f/soKhanGia)+" %");
 
     }
 }
